@@ -1,14 +1,13 @@
 
 
 
-/**
+/**json
  * 
  * @param {number} min 
  * @param {number} max 
  * 
  * @returns {number}
  */
-
 function generaArrayCasuali() {
     let array = [];
     for (let i = 0; i < 10; i++) {

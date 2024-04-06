@@ -2,7 +2,7 @@
 
 
 
-Esercizio 1:
+# Esercizio 1:
 
 Fai inserire un numero, che chiameremo N, all’utente.
 
