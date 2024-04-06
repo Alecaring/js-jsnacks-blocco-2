@@ -1,0 +1,1 @@
+document.getElementById("bottoneCerca").addEventListener("click", cercaIndice);

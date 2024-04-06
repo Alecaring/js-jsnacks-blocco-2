@@ -1,22 +1,26 @@
-
-document.getElementById("btn").addEventListener("click", function() {
-    
-    const elem = inputValue.value;
-
-    const arrElem = ["alessio", "daniele", "alessandro"];
-
-    const numElem = contaElem(arrElem, elem);
-    console.log("numero di elementi in array", numElem);
-
-    arrElem.push(elem);
-
-function contaElem(arreyElem, elem) {
-    let conta = arreyElem.length;
-    if (elem) {
-        conta++;
+document.getElementById("aggiungiElemento").addEventListener("click", function() {
+    let valore = document.getElementById("elementoInput").value;
+    if (valore !== "") {
+        array.push(valore);
+        document.getElementById("elementoInput").value = ""; // Reset input field
+        console.log("Elemento aggiunto:", valore);
     }
-    return conta;
-}
 });
 
+document.getElementById("contaElementi").addEventListener("click", function() {
+    let numero = contaElementi(array);
+    document.getElementById("numeroElementi").textContent = "Numero di elementi: " + numero;
+});
 
+/**
+ * 
+ * @param {object} array 
+ * @returns {number}
+ */
+function contaElementi(array) {
+    let indice = 0;
+    while (indice < array.length) {
+        indice++;
+    }
+    return indice;
+}
