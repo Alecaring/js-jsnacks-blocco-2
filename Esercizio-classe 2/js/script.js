@@ -11,6 +11,9 @@ const parola2 = prompt("ins2");
 
 if (parola1.length === parola2.length) {
     console.log(`${parola1} e ${parola2} sono della stessa lunghezza`);
+
 } else {
+
     console.log("sono diverse");
+    
 }
