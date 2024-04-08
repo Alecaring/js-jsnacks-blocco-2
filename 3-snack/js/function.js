@@ -1,18 +1,8 @@
-
-document.getElementById("aggiungiElemento").addEventListener("click", function() {
-    let valore = document.getElementById("elementoInput").value;
-    if (valore !== "") {
-        array.push(valore);
-        document.getElementById("elementoInput").value = ""; // Reset del campo di input
-        console.log("Elemento aggiunto:", valore);
-    }
-});
-
-document.getElementById("stampaElementi").addEventListener("click", function() {
-    let elementiStringa = stampa(array);
-    document.getElementById("elementiArray").textContent = "Elementi nell'array: " + elementiStringa;
-});
-
 function stampa(array) {
-    return array.join("; ");
+    return array.join(", ")
 }
+
+const btnElem = document.createElement("button");
+btnElem.addEventListener("click", function btn() {
+    paraElem.textContent = stampa(array);
+})
